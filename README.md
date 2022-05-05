@@ -8,10 +8,12 @@ I've created two versions:
 - Minimal version: `silent_kill.sh`
 
 Full:
-- Comments included
 - Displays warnings for when the terminal will die
 - Grace period, a count-down before the terminal is killed.
-- Verbosity can be controlled if it's too verbose.
+- Definable time-window for when terminals will die
+- Alerts when an exclusion has been found.  
+- Controllable verbosity
+- Comments included
 
 Minimal:
 - Silent, no warning, no grace period. Only termination.
