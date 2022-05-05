@@ -2,9 +2,10 @@
 A bash script that will terminate all shells after a pre-determined amount of time. 
 Creating exceptions for each open terminal you don't want killed.
 
-I've created two versions:`
--`*The full version: idle_explosion.sh
--The minimal version: silent_kill.sh
+I've created two versions:
+
+- Full version: `idle_explosion.sh`
+- Minimal version: `silent_kill.sh`
 
 Full:
 - Comments included
