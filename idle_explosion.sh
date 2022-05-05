@@ -8,7 +8,7 @@
 warning=10                                  # This delays execution by n minutes.        (Default is 10 minutes)
 grace_period=3                              # Final count-down in n seconds              (Attention grabbing, set to 0 to disable)
 detonation_time="2:00 am"                   # .. Self explanatory...                     ( i hope. )                                        
-exception_dir="/tmp/.zsh_exception"    # Directory to check for the exceptions      (make sure to change .zshrc alias too)
+exception_dir="/tmp/.zsh_exception"         # Directory to check for the exceptions      (make sure to change .zshrc alias too)
 mkdir $exception_directory > /dev/null 2>&1 # Creates dir, pipes error to /dev/null      (to mute it if it already exists) 
 
 #### alias disarm='touch /tmp/.zsh_exception/${PPID}; echo "\nTerminal PID: ${PPID} exempted.'   <-------  Copy & paste into .zshrc
