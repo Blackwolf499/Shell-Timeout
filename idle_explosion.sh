@@ -21,7 +21,11 @@ disarmed_check () {
 }
 #### Epoch difference calculation. ####
 countdown () { 
-    bomb_timer=$(( $(date -d "$detonation_time" +%s) - $(date +%s) )) 
+    bomb_timer=$(( $(date -d "$detonation_time" +%s) - $(date +%s) ))
+    if [ $bomb_timer -lt -60 ]; then
+        detonation_time="$detonation_time tomorrow"
+        countdown
+    fi 
 } 
 
 #####################################
