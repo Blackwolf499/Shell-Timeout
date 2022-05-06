@@ -1,5 +1,5 @@
 #!/bin/bash
-                              
+                            
 detonation_time="2:00 am"                                                          
 exception_dir="/tmp/.zsh_exception"    
 mkdir $exception_dir > /dev/null 2>&1  
@@ -8,7 +8,10 @@ disarmed_check () {
     bomb_disarmed=$(find $exception_dir -type f -name "${PPID}") 
 }
 countdown () { 
-    bomb_timer=$(( $(date -d "$detonation_time" +%s) - $(date +%s) )) 
+    bomb_timer=$(( $(date -d "$detonation_time" +%s) - $(date +%s) ))
+    if [ $bomb_timer -lt -60 ]; then
+        detonation_time="$detonation_time tomorrow"; countdown
+    fi 
 } 
 nuclear_detonation () {
     while [ ! $bomb_disarmed ]; do
@@ -19,7 +22,7 @@ nuclear_detonation () {
                 $(kill -1 ${PPID}) exit;
             fi
         else
-            sleep $(($bomb_timer -1))
+            sleep $bomb_timer
         fi
     done
     exit;
