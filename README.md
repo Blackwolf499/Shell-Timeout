@@ -22,6 +22,7 @@ Minimal:
     - Minimal memory consumption, no loops, waits 3s prior to detonation time.
 
 Add these two lines to your .zshrc or .bashrc.
+
 `. path/to/file/idle_explosion.sh &`
 
 `alias disarm='touch /tmp/.zsh_exception/${PPID}; echo "Exception made."'`
