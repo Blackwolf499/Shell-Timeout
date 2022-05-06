@@ -20,7 +20,7 @@ Minimal:
 - Silent, no warning, no grace period. Only termination.
 - The lighter version hogs far less resources:  
     - Reduced file size. No comments, no clutter, no noise.
-    - Minimal memory consumption, no loops, sleeps till 3s prior to detonation time.
+    - Minimal memory consumption, no loops, sleeps till 1s prior to detonation time.
 
 
 Add these two lines to your .zshrc or .bashrc.
