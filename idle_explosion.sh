@@ -17,7 +17,7 @@ disarm () {
 }
 #### If PPID exclusion file found, disarms bomb. ####
 disarmed_check () { 
-    bomb_disarmed=$(find exception_dir -type f -name "${PPID}") 
+    bomb_disarmed=$(find $exception_dir -type f -name "${PPID}") 
 }
 #### Epoch difference calculation. ####
 countdown () { 
