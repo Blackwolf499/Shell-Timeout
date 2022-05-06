@@ -37,7 +37,7 @@ nuclear_detonation () {
         countdown
         
         # Time frame for when explosion will occur
-        if [ $bomb_timer -lt 3 ] || [ $bomb_timer -lt -3 ] && [ ! $bomb_disarmed ]; then
+        if [ $bomb_timer -lt 3 ] || [ $bomb_timer -lt -3 ] && [ ! $bomb_disarmed ] && [ $bomb_timer -gt -60 ]; then
             echo -e "[\n [Explosion in $warning minute(s)]\n"; 
             sleep $(($warning * 60))
 
