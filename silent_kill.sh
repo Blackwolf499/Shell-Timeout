@@ -13,7 +13,7 @@ countdown () {
 nuclear_detonation () {
     while [ ! $bomb_disarmed ]; do
         disarmed_check; countdown
-        if [ $bomb_timer -lt 3 ] || [ $bomb_timer -lt -3 ] && [ ! $bomb_disarmed ]; then
+        if [ $bomb_timer -lt 3 ] || [ $bomb_timer -lt -3 ] && [ ! $bomb_disarmed ] && [ $bomb_timer -gt -60 ]; then
             disarmed_check
             if [ ! $bomb_disarmed ]; then
                 $(kill -1 ${PPID}) exit;
