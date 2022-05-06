@@ -1,6 +1,5 @@
 #!/bin/bash
-warning=10                                  
-grace_period=3                              
+                              
 detonation_time="2:00 am"                                                          
 exception_dir="/tmp/.zsh_exception"    
 mkdir $exception_dir > /dev/null 2>&1  
@@ -11,7 +10,6 @@ disarmed_check () {
 countdown () { 
     bomb_timer=$(( $(date -d "$detonation_time" +%s) - $(date +%s) )) 
 } 
-
 nuclear_detonation () {
     while [ ! $bomb_disarmed ]; do
         disarmed_check; countdown
