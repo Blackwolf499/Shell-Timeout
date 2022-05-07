@@ -5,8 +5,8 @@ If an exception is found the backgrounded script will immediately die.
 
 I've created two versions:
 
-- Full version: `idle_explosion.sh`
-- Minimal version: `silent_kill.sh`
+- Full version: `idle_explosion.sh` 2,970 bytes
+- Minimal version: `silent_kill.sh` 924 bytes
 
 Full:
 - Displays warnings for when the terminal will die
