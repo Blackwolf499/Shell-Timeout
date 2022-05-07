@@ -1,6 +1,6 @@
 # Shell-Timeout
 A bash script that will terminate all shells after a pre-determined amount of time. 
-Creatable exceptions for each open terminals you don't want killed. 
+Creatable exceptions for each open terminal you don't want killed. 
 If an exception is found the backgrounded script will immediately die.
 
 I've created two versions:
