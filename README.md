@@ -8,7 +8,9 @@ I've created two versions:
 
 
 
+
 Functionality Comparison:
+
 `idle_explosion.sh`: 
 - Size: 2,970 bytes
 - Displays warnings for when the terminal will die
