@@ -6,9 +6,10 @@ You can create exceptions for terminals you don't want terminated.
 I've created two versions:
 
 - Full version: `idle_explosion.sh` 
-- Minimal version: `silent_kill.sh` ###### *924 bytes*
+- Minimal version: `silent_kill.sh` 
 
-`idle_explosion.sh` ###### *2,970 bytes*
+`idle_explosion.sh` 
+- Size: *2,970 bytes*
 - Displays warnings for when the terminal will die
 - Grace period, a count-down before the terminal is killed.
 - Definable time-window for when terminals will die
@@ -17,6 +18,7 @@ I've created two versions:
 - Comments included
 
 Minimal:
+- Size: * 924 bytes*
 - Silent, no warning, no grace period. Only termination.
 - The lighter version hogs far less resources:  
     - Reduced file size. No comments, no clutter, no noise.
