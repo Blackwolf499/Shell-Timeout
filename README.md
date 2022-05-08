@@ -14,7 +14,8 @@ You can also use words, to fit your writing style more closely[^note].
 - Minimal version: `silent_kill.sh` 
 
 
-[Functionality] [^1]
+[Functionality]
+
 `idle_explosion.sh`: 
 - Size: 2,970 bytes
 - Displays warnings for when the terminal will die
