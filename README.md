@@ -5,8 +5,8 @@ You can create exceptions for terminals you don't want terminated.
 
 I've created two versions:
 
-- Full version: `idle_explosion.sh` ######*2,970 bytes
-- Minimal version: `silent_kill.sh` ######*924 bytes
+- Full version: `idle_explosion.sh` ###### *2,970 bytes
+- Minimal version: `silent_kill.sh` ###### *924 bytes
 
 Full:
 - Displays warnings for when the terminal will die
