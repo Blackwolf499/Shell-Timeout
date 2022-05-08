@@ -7,7 +7,7 @@ You can create exceptions for terminals you don't want terminated.
 - Minimal version: `silent_kill.sh` 
 
 
-[Functionality]
+
 
 `idle_explosion.sh`: 
 - Size: 2,970 bytes
