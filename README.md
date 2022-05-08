@@ -2,14 +2,7 @@
 Shell-Timeout; a bash script that will terminate all shells at a pre-determined time. 
 You can create exceptions for terminals you don't want terminated. 
 
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-
-[^2]: [Versions]
+[Versions]
 - Full version: `idle_explosion.sh` 
 - Minimal version: `silent_kill.sh` 
 
