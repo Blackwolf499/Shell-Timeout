@@ -8,8 +8,8 @@ A footnote can also have multiple lines[^2].
 
 You can also use words, to fit your writing style more closely[^note].
 
-[^1]: My reference
-[Versions]
+
+[^2]: [Versions]
 - Full version: `idle_explosion.sh` 
 - Minimal version: `silent_kill.sh` 
 
