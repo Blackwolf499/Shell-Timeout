@@ -1,7 +1,7 @@
 # Shell-Timeout
-A bash script that will terminate all shells after a pre-determined amount of time. 
-Creatable exceptions for each open terminal you don't want killed. 
-If an exception is found the backgrounded script will immediately die.
+Shell-Timeout; a bash script that will terminate all shells at a pre-determined time. 
+You can create exceptions for terminals you don't want terminated. 
+
 
 I've created two versions:
 
@@ -23,10 +23,13 @@ Minimal:
     - Minimal memory consumption, no loops, sleeps till 1s prior to detonation time.
 
 
-Add these two lines to your .zshrc or .bashrc.
+Add these the following lines to your .zshrc or .bashrc.
 
-`. path/to/file/idle_explosion.sh &`
+`. path/to/file/idle_explosion.sh &` or `. path/to/file/silent_kill.sh &`
 
 `alias disarm='touch /tmp/.zsh_exception/${PPID}; echo "Exception made."'`
 
-Was instructed to undertake this project, this is the polished product. 
+This was a project that I was tasked to undertake, this is the finalised bash-script.
+All terminals are killed with the SIGTERM flag, it terminates current sessions gracefully, 
+Using SIGTERM will kill unresponsive terminal sessions but the history will not be saved as a result. 
+ 
