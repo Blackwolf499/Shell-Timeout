@@ -8,17 +8,17 @@ I've created two versions:
 - Full version: `idle_explosion.sh` 
 - Minimal version: `silent_kill.sh` 
 
-`idle_explosion.sh` 
-- Size: *2,970 bytes*
+`idle_explosion.sh`: 
+- Size: 2,970 bytes
 - Displays warnings for when the terminal will die
-- Grace period, a count-down before the terminal is killed.
-- Definable time-window for when terminals will die
+- Definable Grace period count-down.
+- Definable time for when terminals will die
 - Alerts when an exclusion has been found.  
 - Controllable verbosity
 - Comments included
 
-Minimal:
-- Size: * 924 bytes*
+`silent_kill.sh`:
+- Size: 924 bytes
 - Silent, no warning, no grace period. Only termination.
 - The lighter version hogs far less resources:  
     - Reduced file size. No comments, no clutter, no noise.
