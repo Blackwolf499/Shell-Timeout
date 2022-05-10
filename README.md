@@ -1,5 +1,5 @@
 # Shell-Timeout
-Shell-Timeout; a bash script that will terminate all shells at a pre-determined time. 
+Shell-Timeout; a bash script that will kill all shells at a pre-determined time. 
 You can create exceptions for terminals you don't want terminated. 
 
 I've created two versions:
